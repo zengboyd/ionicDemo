@@ -1,0 +1,13 @@
+<ion-view title="Loading Bar" ng-controller="LoadingBarCtrl">
+    <div class="bar bar-loading bar-assertive" ng-if="data.isLoading">
+        数据加载中...
+    </div>
+
+    <ion-content ng-class="{'has-loading': data.isLoading}">
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                {{item.title}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

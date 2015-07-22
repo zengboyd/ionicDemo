@@ -99,6 +99,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                   templateUrl: "templates/demo/demo_checkbox.html"
               }
           }
+      })
+      .state('tabs.demoLoadingBar', {
+          url: "/demoLoadingBar",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_loadingbar.html"
+              }
+          }
       });
   //});
   // if none of the above states are matched, use this as the fallback
