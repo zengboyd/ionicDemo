@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home-container > .row {
+    flex: 1;
+}
+
+.header {
+    flex: 1.5 !important;
+    align-items: center;
+    background-color: #1abc9c;
+}
+
+a.home-icon img {
+    width: 50%;
+}
+
+.icon-row {
+    align-items: center;
+}
