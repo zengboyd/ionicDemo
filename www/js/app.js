@@ -107,7 +107,32 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                   templateUrl: "templates/demo/demo_loadingbar.html"
               }
           }
+      })
+      .state('tabs.animatedList', {
+          url: "/animatedList",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_animatedList.html"
+              }
+          }
+      })
+      .state('tabs.recorderList', {
+          url: "/recorderList",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_recorderList.html"
+              }
+          }
+      })
+      .state('tabs.infiniteScroll', {
+          url: "/infiniteScroll",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_infiniteScroll.html"
+              }
+          }
       });
+
   //});
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/home');

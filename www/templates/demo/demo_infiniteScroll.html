@@ -1,0 +1,12 @@
+<ion-view title="Infinite Scroll" ng-controller="ForeverCtrl">
+    <ion-content>
+        <div class="list">
+            <div class="item" ng-repeat="item in items">
+                {{item}}
+            </div>
+        </div>
+
+        <ion-infinite-scroll on-infinite="loadMoreItems()" icon="ion-loading-c">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
