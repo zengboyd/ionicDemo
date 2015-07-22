@@ -5,7 +5,7 @@ angular.module('starter.controllers')
         $scope.loadingOptions = {
             duration: 1000,
             delay: 0,
-            template: '<i class="icon ion-loading-c"></i>\n<br/>\nLoading...',
+            template: '<ion-spinner class="spinner-light"></ion-spinner>\n<br/>\nLoading...',
             noBackdrop: false
         };
         $scope.showLoading = function() {
