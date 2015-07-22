@@ -75,6 +75,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             templateUrl: "templates/tabs/contact.html"
           }
         }
+      })
+      .state('tabs.demo', {
+          url: "/demo",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_entry.html"
+              }
+          }
+      })
+      .state('tabs.demoLoading', {
+          url: "/demoLoading",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/demo/demo_loading.html"
+              }
+          }
       });
   //});
   // if none of the above states are matched, use this as the fallback
