@@ -63,3 +63,20 @@ a.home-icon img {
 }
 
 /*-- loading bar end--*/
+
+.button-bar.button-bar-subheader .button.button-light {
+    color: rgb(56, 126, 245);
+}
+
+.button-bar.button-bar-subheader .button {
+    border-color: rgb(56, 126, 245);
+    color: rgb(56, 126, 245);
+    background-color: white;
+    height: 31px;
+    font-size: 14px;
+}
+
+.button-bar.button-bar-subheader .button.button-light {
+    background-color: rgb(56, 126, 245);
+    color: white;
+}

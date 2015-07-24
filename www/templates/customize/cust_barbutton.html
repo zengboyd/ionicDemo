@@ -1,0 +1,39 @@
+<ion-view title="BarButtons">
+    <ion-header-bar class="bar-subheader">
+        <div class="button-bar">
+            <a class="button" ng-click="getDraftList()">草稿</a>
+            <a class="button" ng-click="getTodoList()">待办</a>
+            <a class="button" ng-click="getToReadList()">待阅</a>
+        </div>
+    </ion-header-bar>
+    <ion-header-bar class="bar-subheader">
+        <div class='button-bar button-clear button-bar-subheader'>
+            <button
+                    class="button"
+                    ng-click="getDraftList()"
+                    ng-class="{'button-light': status.button1}">我的草稿
+            </button>
+            <button
+                    class="button"
+                    ng-click="getTodoList()"
+                    ng-class="{'button-light': status.button2}">待办
+            </button>
+            <button
+                    class="button"
+                    ng-click="getToReadList()"
+                    ng-class="{'button-light': status.button3}">待阅
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <ion-refresher on-refresh="refresh()" pulling-text="松开即可刷新..." refreshing-text="正在更新..."
+                       refreshing-icon="ion-loading-c"></ion-refresher>
+        <ion-list>
+        <ion-list class="padding has-subheader">
+            <ion-item class="animated-item"
+                      ng-repeat="item in items">
+                {{item.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

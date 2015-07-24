@@ -178,7 +178,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
                  templateUrl: "templates/demo/demo_popup.html"
              }
          }
-     });
+     })
+      .state('main.tabs.custom', {
+          url: "/customize",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/customize/custom_entry.html"
+              }
+          }
+      })
+      .state('main.tabs.barbuttons', {
+          url: "/barbuttons",
+          views: {
+              'home-tab' : {
+                  templateUrl: "templates/customize/cust_barbutton.html",
+                  controller: "BarButtonsCtrl"
+              }
+          }
+      });
      // .state('search', {
      //   url: '/search',
      //   templateUrl: 'templates/sidemenu/search.html'
