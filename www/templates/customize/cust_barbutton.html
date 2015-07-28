@@ -8,19 +8,25 @@
     </ion-header-bar>
     <ion-header-bar class="bar-subheader">
         <div class='button-bar button-clear button-bar-subheader'>
+            <!--ng-click="getDraftList()"-->
             <button
                     class="button"
-                    ng-click="getDraftList()"
+
+                    ng-click="chooseItem(1)"
                     ng-class="{'button-light': status.button1}">我的草稿
             </button>
+            <!--ng-click="getTodoList()"-->
             <button
                     class="button"
-                    ng-click="getTodoList()"
+
+                    ng-click="chooseItem(2)"
                     ng-class="{'button-light': status.button2}">待办
             </button>
+            <!--ng-click="getToReadList()"-->
             <button
                     class="button"
-                    ng-click="getToReadList()"
+
+                    ng-click="chooseItem(3)"
                     ng-class="{'button-light': status.button3}">待阅
             </button>
         </div>
